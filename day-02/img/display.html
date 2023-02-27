@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in JavaScript</title>
+    <script>
+        function myFunction() {
+            document.getElementById('three').innerHTML = "change text";
+            document.getElementById('three').style.textAlign = "center";
+            document.getElementById('three').style.fontSize="40px";
+
+        }
+    </script>
+</head>
+
+<body id="top">
+    <!--<button onclick="document.getElementById('top').style.backgroundColor='brown'">😑</button>
+    <h1>What Can JavaScript Do?</h1>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo" style="display: none;">Hello JavaScript</p>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Here!</button>-->
+    <h1>This is javaScript</h1>
+    <p id="one"></p>
+    <script>
+        document.getElementById('one').innerHTML = "hello javaScript";
+
+    </script>
+    <div id="two">Hello Clay Jenson!</div>
+    <script>
+        document.getElementById('two').style.fontSize = '30px';
+        document.getElementById('two').style.border = '2px solid red';
+        document.getElementById('two').style.backgroundColor = 'green';
+    </script>
+
+    <p id="three">harry potter</p>
+    <button type="button" onclick="myFunction()">Try it!</button>
+</body>
+
+</html>
