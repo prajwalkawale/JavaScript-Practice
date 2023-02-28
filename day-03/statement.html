@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement in JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript Statements </h1>
+    <p>The compture program is list of instruction to be executed these instructions in programs is call Statements</p>
+    <p id="one"></p>
+    <script>
+        let a, b, c;
+        a = 5;
+        a = 10; //let variable's value can change
+        b = 2;
+        c = a + b;
+        document.getElementById("one").innerHTML = c;
+    </script>
+    <p id="two"></p>
+    <script>
+        let d, e, f;
+        d = 5; e = 4; f = d + e; //separated by semicolam 
+        document.getElementById("two").innerHTML = f;
+    </script>
+    <br>
+    <br>
+    <h1>JavaScript Code Block.</h1>
+    <p>JavaScript statements can be group together in code block in the curly brackets.</p>
+    <button type="button" onclick="myFunction()">Click Here</button>
+    <p id="four"></p>
+    <p id="three"></p>
+    <script>
+        function myFunction() {
+            document.getElementById("four").innerHTML = "HELLO"
+            document.getElementById("three").innerHTML = "WEB DEVELOPER"
+            document.getElementById("four").style.color = "green"
+            document.getElementById("three").style.color = "green"
+        }
+    </script>
+    <br>
+    <br>
+    <h1>Arithmetic Oparators in JavaScript</h1>
+    <p id="five"></p>
+    <script>
+        document.getElementById("five").innerHTML = (5 + 4) * 8;
+    </script>
+    <p id="six"></p>
+    <script>
+        document.getElementById("six").innerHTML = 12 % 13;//Modulus (devision reminder)
+        document.getElementById("six").style.backgroundColor = "green";
+    </script>
+    <h2> JavaScript keywords </h2>
+    <p id="seven"></p>
+    <script>
+        let g = 5 + 8;
+        let i = g * 10;
+        document.getElementById("seven").innerHTML = i;
+        document.getElementById("seven").style.border = "solid black 2px"; // trying to give css style by using javascript
+    </script>
+    <h2>Const veriable in JavaScript</h2>
+    <p id="eight"></p>
+    <script>
+        const one = 10;
+        const two = 12;
+        let vlaue = one + two;
+        document.getElementById("eight").innerHTML = "the total value is " + vlaue; //const variable 
+    </script>
+    <p id="jenson"></p>
+    <script>
+        let clay = x + 5;
+        document.getElementById("jenson").innerHTML = clay;
+
+    </script>
+
+</body>
+
+</html>

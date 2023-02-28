@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output in JavsScript </title>
+</head>
+
+<body>
+    <h1>Using innerHTML</h1>
+    <p>To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+    <p id="demo"></p>
+    <!--This is fisrt method-->
+    <script>
+        document.getElementById('demo').innerHTML = "Hi THis out by using innerHTML method"
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Using document.write()</h1>
+    <p>For testing purposes, it is convenient to use document.write():
+    </p>
+    <p id="one"></p>
+    <script>
+        document.write("Helllo form document.write");
+    </script>
+    <br>
+    <script>
+        document.write(1200 + 1203);
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Using document.write() after an HTML document is loaded, will delete all existing HTML:</h2>
+    <button type="button" onclick="document.write(15+30)">Try It</button>
+    <h3>The document.write() method should only be used for testing.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Using window.alert()</h1>
+    <p>You can use an alert box to display data:></p>
+    <p id="two"></p>
+    <script>
+        window.alert(50 + 20);
+    </script>
+    <br>
+    <br>
+    <!--Two Alerts will face when code will run -->
+    <br>
+    <h2>You can skip the window keyword.</h2>
+    <script>
+        alert(15 + 30);
+    </script>
+    <br>
+    <br>
+    <br>
+    <h1>Using console.log()</h1>
+    <script>
+        console.log(15 + 15);
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1><u>JavaScript Print</u></h1>
+    <button type="button" onclick="window.print()">Cick Here For Print</button>
+
+</body>
+
+</html>
