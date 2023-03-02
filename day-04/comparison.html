@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison in JavaScript</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // Assignment operators '='
+        const x = 5;
+        // Comparison operators '=='
+        console.log(x == 5);
+        console.log(x == 2);
+        console.log(x == "5");
+        // Strict Comparison operators '==='
+        console.log(x === 5);
+        console.log(x === 2);
+        console.log(x === "5"); //strict comparison will give false of this value
+        // ! = is not equal to operator 
+        console.log(x != 5); // false 
+        console.log(x != 8); // true
+        console.log(x != "10"); // true
+        console.log(x !== 5); // false 
+        console.log(x !== 8); // true
+        console.log(x !== "10"); // true
+        // Greater than operators '>=' or equal to operators
+        console.log(x >= 5); // false   
+        console.log(x >= 8); // false
+        console.log(x >= "10"); // false
+        // Less than operators '<=' or equal to operators 
+        console.log(x <= 5); // true 
+        console.log(x <= 8); // true
+        console.log(x <= "10"); // true
+
+
+    </script>
+</body>
+
+</html>
