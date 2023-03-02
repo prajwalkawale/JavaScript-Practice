@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponantiation-Oparators in javaScript</title>
+</head>
+
+<body>
+    <h1>Exponantiation-Oparators</h1>
+    <p id="demo"></p>
+    <script>
+        //Exponatiation simply means in mathematics like squaroot 
+        let x = 5
+        console.log("exponatiation", x ** 2)
+        console.log("expontiation", x ** 3)
+        document.getElementById("demo").innerHTML = x ** 3; 
+    </script>
+    <p id="one"></p>
+    <script>
+        let y = 5
+        console.log("same as exponatiation", Math.pow(y, 2))
+        console.log("same as exponatiation", Math.pow(y, 3))
+        console.log("same as exponatiation", Math.pow(y, 4))
+        document.getElementById("one").innerHTML = Math.pow(y, 2)
+    </script>
+    <p id="three"></p>
+    <script>
+        let z = 4
+        let o = 6
+        let t = z + o * 2 // 4 + 6*2 firstly get multiplication
+        console.log("priority to multiplication", t)
+        document.getElementById("three").innerHTML = t;
+    </script>
+    <p id="four"></p>
+    <script>
+        let h = 25 / 5 * 3
+        document.getElementById("four").innerHTML = h;
+        console.log("priority to division")
+    </script>
+    <p id="five"></p>
+    <script>
+        function myFunction() {
+
+            return "hello";
+        }
+        document.getElementById("five").innerHTML = myFunction();
+    </script>
+    <button onclick="alert('hello')"> click here </button>
+
+
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+
+
+</html>
