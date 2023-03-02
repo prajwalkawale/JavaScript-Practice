@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in JacaScript</title>
+</head>
+
+<body>
+    <h1>operators in JavaScript</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        // increment operator
+        let one = 1;
+        one = one + 1;  // short hand code is  [one++]
+        console.log("increment", one)
+        one++;
+        console.log("increment", one)
+        one++;
+        console.log("increment", one)
+        //decrement operator
+        one--;
+        console.log("decrement", one)
+        one--; // short hand code of one= one-3;
+        console.log("decrement", one)
+        // Addition oparator
+        one += 5; // one = one + 5 ; [ short hand code ]
+        console.log("addition", one)
+        //Substraction operator 
+        one -= 5;  // short hand code is one = one - 5 
+        console.log("substraction", one)
+        // Multiply by five 
+        one *= 5; // short hand code is one=one*5;
+        console.log("Multiply", one)
+        // divide by 2
+        one /= 2; // short hand code is one = one /5;
+        console.log("divide", one)
+        // Modulus by 5
+        one %= 5; // short hand code is one = one %5;
+        console.log("Modulus", one)
+        const first = "prajwal";
+        const last = "kawale";
+        const fullname = first +" "+ last;
+        console.log("user name", fullname)
+        let vicky = "hello "
+        vicky += "from india"
+        console.log("text",vicky)
+        document.getElementById("two").innerHTML=fullname;
+        document.getElementById("one").innerHTML = one;
+    </script>
+</body>
+
+</html>
