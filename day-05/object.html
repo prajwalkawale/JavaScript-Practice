@@ -11,14 +11,31 @@
 <body>
     <h1>Object in JavaScript</h1>
     <p id="one"></p>
-  
-<script>
-    // Create an object:
-    const car = {type:"Fiat", model:"500", color:"white"};
-    
-    // Display some data from the object:
-    document.getElementById("one").innerHTML = "The car type is " + car.type;
+    <script>
+        const car ={type:"car" , color: "red" , model : "fost555"}
+        console.log("car type::",car.type,car.color,car.model)
+        document.getElementById("one").innerHTML= "this is color of car" +" "+ car.color +"</br>"+"car model is"+" "+car.model;
     </script>
+<p id="two"></p>
+<script>
+   const person={firstName:"john" , lastName:"barris",age:55};
+   console.log("person name::",person.firstName+" "+person.lastName)
+   document.getElementById("two").innerHTML=person.firstName+" "+person.lastName ;
+ 
+</script>
+<p id="three"></p>
+<script>
+    const male ={
+        firstName:"clay",
+        lastName:"jenson",
+        age:"25",
+        maleName:function(){
+            return this.firstName+" "+this.lastName;
+        }
+    };
+    document.getElementById("three").innerHTML=male.maleName();
+    console.log("maleName is::",male.maleName)
+</script>
     
 </body>
 
