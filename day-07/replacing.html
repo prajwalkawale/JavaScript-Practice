@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacement of content in JavaScript</title>
+</head>
+
+<body>
+    <h1>The replacement in JavaScript</h1>
+    <button onclick="myFunction()">Click Here</button>
+    <p id="one">Hellow Programmer</p>
+    <script>
+        function myFunction() {
+            let txt = document.getElementById("one").innerHTML;
+            document.getElementById("one").innerHTML = txt.replace("Hellow Programmer", "Hello Clay");
+            console.log("replace",txt.replace("Hellow Programmer","Hello clay"))
+        }
+    </script>
+
+
+<hr>
+<h3 id="two">THE CASE SENSITIVE</h3>
+<button onclick="myCode()">try here</button>
+<script>
+    function myCode() {
+        let one =document.getElementById("two").innerHTML;
+        document.getElementById("two").innerHTML= one.replace(/THE CASE SENSITIVE/i,"this is case sensitive")
+        console.log("mycode",one.replace(/THE CASE SENSITIVE/i,"this is case sensitive"))
+    }
+</script>
+<h3 id="three">hello,hello,hello,hello</h3>
+<button onclick="myFunction()">CLICK HERE</button>
+<script>
+function myFunction (){
+    let lEt= document.getElementById("three").innerHTML;
+    document.getElementById("three").innerHTML=lEt.replace(/hello/g,"HELLO")
+    console.log("result",lEt.replace(/hello/g , "HELLO"))
+};
+    
+</script>
+</body>
+
+
+</html>

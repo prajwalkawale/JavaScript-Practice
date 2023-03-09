@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in javascript </title>
+</head>
+
+<body>
+    <h1>This is headline</h1>
+    <p id="demo"></p>
+    <p id="one"></p>
+    <script>
+        const x = "hello";
+        const y = new String("hello world")
+        document.getElementById("demo").innerHTML = typeof x;
+        document.getElementById("one").innerHTML = typeof y;
+    </script>
+    <hr>
+    <p id="two"></p>
+    <script>
+        const one = "hey i am clay";
+        const two = new String("hey i am programmer");
+        console.log("boolean", x == y)
+        document.getElementById("two").innerHTML = typeof one + "<br/>" + typeof y;
+    </script>
+    <hr>
+
+
+    <h2 id="four"></h2>
+    <script>
+        //The text converts lowercase to uppercase 
+        const person = "hello i am here"
+        person.toUpperCase()
+        console.log("checking", person.toUpperCase())
+        document.getElementById("four").innerHTML = person.toUpperCase()
+    </script>
+
+
+    <hr>
+
+    <h2 id="five"></h2>
+    <script>
+        let fruit = "apple,bananna,kiwi"
+        fruit = fruit.slice(6, 13)//bananna will print 
+        console.log("slice=", fruit)
+        document.getElementById("five").innerHTML = fruit;
+    </script>
+    <hr>
+
+    <!--omit the second parameter, the method will slice out the rest of the string-->
+    <h2 id="six"></h2>
+    <script>
+        let laptop = "asus,hp,lenevo,dell"
+        laptop = laptop.slice(5)
+        console.log("laptop", laptop)
+        document.getElementById("six").innerHTML = laptop;
+    </script>
+
+
+<hr>
+<!--If a parameter is negative, the position is counted from the end of the string-->
+<h2 id="seven"></h2>
+<script>
+let pen = "stylo,pentek,trimax"
+pen=pen.slice(-13)
+console.log("pen",pen)
+document.getElementById("seven").innerHTML=pen;
+</script>
+
+
+<hr>
+<!--substring() is similar to slice()-->
+<h2 id="eight"></h2>
+<script>
+    let mobile="redmi,poco,nokia,samsung"
+    mobile=mobile.substring(6,10)
+    console.log("mobile",mobile)
+    document.getElementById("eight").innerHTML=mobile;
+</script>
+
+
+
+<br>
+<h2 id="nine"></h2>
+<script>
+    let name = "harry,pitter,hannha"
+    console.log("name",name.substr(6,12))
+    document.getElementById("nine").innerHTML=name.substr(6,12)
+
+
+</script>
+</body>
+
+</html>
