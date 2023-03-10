@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JavaScript</title>
+</head>
+<body>
+    <h1>This is headline for string methods</h1>
+    <p id="demo"></p>
+    <script>
+        let person= "this is laptop of asus and 'asus' is the best laptop"
+        document.getElementById("demo").innerHTML=person.lastIndexOf('asus')
+    </script>
+    <!--The index method can accept second parameter which is used for search from that position-->
+    <br>
+    <br>
+
+    <p id="one"></p>
+    <script>
+        let x = "one two three four five three six seven"
+        document.getElementById("one").innerHTML=x.indexOf("three",7)
+        console.log("one",x.indexOf("three",7))
+    </script>
+</body>
+</html>
