@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreys in JavaScript</title>
+</head>
+
+<body>
+    <h1>Arreys in JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        let car = ["maruti", "volvo", "BMW", "creata"]
+        document.getElementById("demo").innerHTML = car[0];
+        console.log("cars::", car[0])
+    </script>
+    <!--changing an arrey elements-->
+    <p id="two"></p>
+    <script>
+        let cars = ["maruti", "volvo", "BMW", "creata"] //change maruti to kia carens
+        cars[0] = "kia carens"
+        document.getElementById("two").innerHTML = cars;
+    </script>
+    <p id="three"></p>
+    <p id="four"></p>
+    <script>
+        const person = [
+            { firstName: "jenson", lastName: "potter", age: 30 },
+            { firstName: "clay", lastName: "hannha", age: 30 },
+            { firstName: "pitter", lastName: "blosome", age: 30 }
+
+        ]
+        console.log("objects in arreys::", person[1]);
+        document.getElementById("three").innerHTML= person[2].lastName;
+</script>
+</body>
+
+</html>
