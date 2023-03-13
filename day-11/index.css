@@ -1,0 +1,16 @@
+body {
+    background-color: rgba(210, 105, 30, 0.697);
+}
+
+#numInputID:hover:active {
+    background-color: coral;
+}
+
+#numID{
+    font-size: x-large;
+    background-color: azure;
+}
+#textID{
+    font-size: x-large;
+    background-color: azure;
+}
