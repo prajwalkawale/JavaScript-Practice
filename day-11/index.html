@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array practice</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>Array sorting</h1>
+    <input id="numInputID" type="number" placeholder="Enter Number" />
+    <button onclick="onAddNumberClicked()">Add Number</button>
+    <br>
+    <input id="textInputID" type="text" placeholder="Enter fruits" />
+    <button onclick="myFunction()">Add Fruits To The Array</button>
+    <p id="numID"></p>
+    <br>
+    <br>
+    <p id="textID"></p>
+    <script>
+        const numbersArray = [];
+        const textArray = [];
+        const paragraphTextElement = document.getElementById("textID");
+        const paraghraphNumElement = document.getElementById("numID");
+        const inputTextElement = document.getElementById("textInputID");
+        const inputNumberElement = document.getElementById("numInputID");
+        inputNumberElement.value = 0;
+        inputTextElement.value = 0;
+        function onAddNumberClicked() {
+            numbersArray.push(Number(inputNumberElement.value));
+            paraghraphNumElement.innerHTML = numbersArray.join("|");
+        };
+        function myFunction() {
+            textArray.push(String(inputTextElement.value));
+            paragraphTextElement.innerHTML = textArray.join("|");
+        }
+    </script>
+</body>
+
+</html>

@@ -22,18 +22,21 @@
         }
     </script>
     <br>
-    <!--New element can also be added to an array using the length property-->
-     <h1>Length use insted of push method for adding new fruits into it</h1>
-    <button type="button" onclick="myFruits()">Try Here!</button>
     <p id="two"></p>
+    <p id="three"></p>
     <script>
-        let fruit = ["apple", "bannana", "apple"]
-        document.getElementById("two").innerHTML = fruit;
-
-        function myFruits() {
-            fruit[fruit.length] = "kiwi";
-            document.getElementById("two").innerHTML = fruit;
-        }
+        let friendsName = ["amit", "rushikesh", "aniket", "sumedh"]
+        document.getElementById("two").innerHTML = friendsName;
+        friendsName.pop();
+        document.getElementById("three").innerHTML = friendsName;
+    </script>
+    <br>
+    <p id="four"></p>
+    <p id="five"></p>
+    <script>
+        let naME = ["pratik","nachiket","akash","rohan"]
+        document.getElementById("four").innerHTML=naME.pop() ;
+        document.getElementById("five").innerHTML=naME ;
     </script>
 </body>
 
