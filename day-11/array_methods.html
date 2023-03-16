@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1>Array Methods In JavaScript</h1>
+    <input id="one" type="number" placeholder="type number">
+    <button onclick="myNumber()">Click Here</button>
+    <p id="two"></p>
+    <script>
+        let number = [];
+        let numberParagraph = document.getElementById("two")
+        let numberId = document.getElementById("one");
+        numberId.value = 0;
+        function myNumber() {
+            number.push(Number(numberId.value));
+            numberParagraph.innerHTML = number.join("|")
+        };
+    </script>
+    <input id="five" type="text" placeholder="Enter Fruits Name">
+    <button onclick="myText()">Click Here</button>
+    <p id="three"></p>
+    <script>
+        let textArray = [];
+        let textParagraph = document.getElementById("three");
+        let inputText = document.getElementById("five");
+        inputText.value = 0;
+        function myText() {
+            textArray.push((inputText.value));
+            textParagraph.innerHTML = textArray.join("|");
+        };
+
+    </script>
+</body>
+
+</html>

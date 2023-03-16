@@ -1,0 +1,15 @@
+#two {
+    text-align: center;
+    margin: 100px;
+    padding: 100px;
+    border: 2px solid black;
+}
+body {
+    background-color: rgba(137, 43, 226, 0.519);
+}
+button{
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+}
