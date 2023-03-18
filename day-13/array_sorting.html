@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array_sorting in javascript</title>
+</head>
+
+<body>
+    <h1>This heading for ArraySorting in javascript</h1>
+    <p id="one"> </p>
+    <p id="two"></p>
+    <script>
+        let numberArray = [45, 36, 15, 56, 12, 48, 79]
+        document.getElementById("one").innerHTML = numberArray;
+        numberArray.sort(function (a, b) { return (a - b) })
+        console.log("sorting::", numberArray);
+        document.getElementById("two").innerHTML = numberArray;
+    </script>
+    <p id="demo"></p>
+    <button onclick="myNumber()">click here!</button>
+    <button onclick="myPractice()">Click here!</button>
+    <script>
+        const points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("demo").innerHTML = points;  
+        
+        function myNumber() {
+          points.sort();
+          document.getElementById("demo").innerHTML = points;
+        }
+        function myPractice() {
+          points.sort(function(a, b){return a - b});
+          document.getElementById("demo").innerHTML = points;
+        }
+        </script>
+        
+</body>
+
+</html>
