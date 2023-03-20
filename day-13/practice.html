@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is headline</h1>
+    <button onclick="myFunction1()">Click Here!</button>
+    <button onclick="myFunction2()">click Here!</button>
+    <p id="demo"></p>
+    <script>
+        const numArray = [40, 26, 36, 85, 63];
+        document.getElementById("demo").innerHTML = numArray;
+        function myFunction1() {
+            numArray.sort()
+            console.log("sort::", numArray);
+            document.getElementById("demo").innerHTML = numArray;
+        }
+        function myFunction2() {
+            numArray.sort(function (a, b){return a-b})
+            console.log("a-b::", numArray);
+            document.getElementById("demo").innerHTML = numArray;
+        };
+    </script>
+</body>
+
+</html>
