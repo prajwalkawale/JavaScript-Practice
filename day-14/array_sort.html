@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array_sort in javascript</title>
+</head>
+
+<body>
+    <h1>find the lowest and highest Value</h1>
+    <p id="one"></p>
+    <button onclick="myOnleclick()">click Here!</button>
+    <script>
+        const score = [45, 32, 96, 41, 46, 14];
+        document.getElementById("one").innerHTML = score;
+
+        function myOnleclick() {
+            score.sort(function (a, b) {
+                return a - b
+            })
+            document.getElementById("one").innerHTML=score[0];
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <p>The highest number is</p>
+    <p id="two"></p>
+    <button onclick="myHighestNumber()">click here!</button>
+    <script>
+        const mynumbers = [41, 23, 56, 85, 33, 96];
+        document.getElementById("two").innerHTML = mynumbers;
+
+        function myHighestNumber() {
+            mynumbers.sort(function (a, b) { return b - a });
+            document.getElementById("two").innerHTML = mynumbers;
+        };
+    </script>
+</body>
+
+</html>

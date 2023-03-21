@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find Highest numbers </title>
+</head>
+<body>
+    <h1>Find the highest numbers in the array</h1>
+    <p>the highest number is <span id="demo"></span></p>
+    <script>
+        const numArray=[45,23,63,41,46,89];
+        document.getElementById("demo").innerHTML= myFunction(numArray);
+
+        function myFunction(){
+            return Math.max.apply(null ,numArray);
+        }
+    </script>
+    <br>
+    <br>
+    <hr>
+    <p>This is minimum value of array <span id="one"></span></p>
+    <script>
+        const minArray=[45,23,63,41,89,90];
+        document.getElementById("one").innerHTML=myMinfunction(minArray);
+
+        function myMinfunction() {
+            return Math.min.apply(null,minArray);
+        }
+    </script>
+</body>
+</html>
