@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sorting in javascript</title>
+</head>
+<body>
+    <h2>JavaScript Array Sort</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+<p id="demo"></p>
+<button onclick="myFunction()">click Here!</button>
+<script>
+    const points =[23,25,36,41,63];
+    document.getElementById("demo").innerHTML=points;
+
+    function myFunction(){
+        points.sort(function(){return 0.5 - Math.random()});
+        document.getElementById("demo").innerHTML = points ;
+    }
+</script>
+<br>
+<br>
+<br>
+<p id="one"></p>
+<button onclick="myChanges()">Click Here !</button>
+<script>
+    const numberArray = [12,63,85,45,61];
+    document.getElementById("one").innerHTML=numberArray ;
+
+    function myChanges(){
+        numberArray.sort(function(){return 0.5 - Math.random()});
+        document.getElementById("one").innerHTML=numberArray ;
+    }
+</script>
+</body>
+</html>

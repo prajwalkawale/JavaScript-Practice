@@ -10,6 +10,7 @@
 
 <body>
     <h1>this is headline</h1>
+    <p>The Smallest Number Is</p>
     <button onclick="myFunction1()">Click Here!</button>
     <button onclick="myFunction2()">click Here!</button>
     <p id="demo"></p>
@@ -22,11 +23,12 @@
             document.getElementById("demo").innerHTML = numArray;
         }
         function myFunction2() {
-            numArray.sort(function (a, b){return a-b})
+            numArray.sort(function (a, b) { return a - b })
             console.log("a-b::", numArray);
             document.getElementById("demo").innerHTML = numArray;
         };
     </script>
+    
 </body>
 
 </html>
