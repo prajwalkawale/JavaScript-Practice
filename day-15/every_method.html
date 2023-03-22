@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every methods in javascript</title>
+</head>
+<body>
+    <h1>The Every Methods for array in javascript</h1>
+    <p id="one"></p>
+    <script>
+        const points =[45,36,65,52,53,74];
+        const points2= points.every(myPoints);
+         
+        document.getElementById("one").innerHTML = "the points greater than "+ points2 ;
+
+        function myPoints(value,index,array){
+            return value>18 ;
+        }
+    </script>
+</body>
+</html>
