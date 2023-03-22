@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math method in javascript</title>
+</head>
+
+<body>
+    <h1>Math Methods in javascript</h1>
+    <p id="one"></p>
+
+    <script>
+        const points = [14, 53, 25, 64, 34, 37];
+        const points2 = points.map(myFunction);
+
+
+        document.getElementById("one").innerHTML = points2;
+
+
+
+        function myFunction(value, index, array) {
+            return value * 2 + "<br>"
+        }
+
+    </script>
+
+<hr>
+
+    <p id="two"></p>
+    <script>
+        const numbers = [45, 4, 9, 16, 25];
+        const over18 = numbers.filter(myFunction);
+        
+        document.getElementById("two").innerHTML = over18;
+        
+        function myFunction(value, index, array) {
+          return value > 18;
+        }
+        </script>
+        <hr>
+        <p id="three"></p>
+        <script>
+            const marks=[15,36,54,63,55];
+            const maxMarks=marks.filter(myMarks);
+
+            document.getElementById("three").innerHTML = maxMarks ;
+
+            function myMarks(value){
+                return value>15 ;
+            }
+        </script>
+</body>
+
+</html>
