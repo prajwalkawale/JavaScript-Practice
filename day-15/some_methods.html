@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some  method  in javascript</title>
+</head>
+<body>
+    <h1>Some method in array</h1>
+    <p id="demo"></p>
+    <hr>
+    <br>
+    <p id="one"></p>
+    <br>
+    <hr>
+    <p id="two"></p>
+    <br>
+    <br>
+    <hr>
+    <p id="three"></p>
+    
+    <script>
+        const points=[40,23,52,,37,96];
+        const totalPoints= points.some(myPoints);
+        console.log("some::",totalPoints)
+        document.getElementById("demo").innerHTML = totalPoints;
+
+        function myPoints(value,index,array){
+            return value>30;
+        }
+        const fruits = ["apple","orange","apple","mango"]
+        const position= fruits.indexOf("orange")  ;
+        document.getElementById("one").innerHTML = "the position of orange found on "+ position ; 
+
+        const arrayNumber = [45,52,63,24,31];
+        const number =arrayNumber.find(myFuntion);
+        document.getElementById("two").innerHTML = "first number over 20 is "+number ;
+        
+        function myFuntion(value,inded,array) {
+            return value>20 ;
+        }
+
+        const indexnumber = [45,52,63,24,31];
+        const Number=indexnumber.findIndex(myIndex)
+        document.getElementById("three").innerHTML="the index number of value over than 20 is "+Number ;
+
+        function myIndex(value,index,array) {
+            return value>20 ;
+        }
+
+    </script>
+</body>
+</html>
