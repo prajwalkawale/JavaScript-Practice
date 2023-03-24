@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries in javascript</title>
+</head>
+<body>
+    <h1>Entries methods in Arrays</h1>
+    <p id="one"></p>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p id="two"></p>
+    <br>
+    <br>
+    <p id="three"></p>
+    <script>
+       const fruits=["mango","apple","orange","kiwi","pineapple"]
+       const f = fruits.entries()
+       for (let x of f){
+        document.getElementById("one").innerHTML+=x +"<br>";
+       }
+
+       const Fruits=["mango","apple","orange","kiwi","pineapple"];
+       const F =fruits.keys()
+       let text = "";
+       for(let x of F){
+        text += x +"<br>";
+       }
+       document.getElementById("two").innerHTML=text ;
+       const myfruits=["mango","apple","orange","kiwi","pineapple"];
+       document.getElementById("three").innerHTML=" from this method we can change if mango contain or not:: "+myfruits.includes("mango");
+          </script>
+</body>
+</html>
