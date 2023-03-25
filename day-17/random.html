@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random methods in JavaScript</title>
+</head>
+
+<body>
+    <h1>Random Methods in JavaScript</h1>
+    <p id="one"></p>
+    <hr>
+    <p id="two"></p>
+    <hr>
+    <p id="three"></p>
+    <button onclick="document.getElementById('three').innerHTML=getRndInteger(0,10)">Clicl Here!</button>
+    <hr>
+    <p id="four"></p>
+    <button onclick="document.getElementById('four').innerHTML=getRndInteger(0,11)">Click Here!</button>
+    <script>
+        document.getElementById("one").innerHTML = Math.floor(Math.random() * 10)//*10 gives under 10 random values not even 10
+        document.getElementById("two").innerHTML = Math.floor(Math.random() * 11)//*11 gives under 11 random values it gives 10 value
+
+        function getRndInteger(max, min) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        function getRndInteger(max, min) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>

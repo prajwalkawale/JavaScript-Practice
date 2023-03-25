@@ -20,6 +20,9 @@
     <p id="five"></p>
     <hr>
     <p id="six"></p>
+    <hr>
+    <p id="seven"></p>
+    <p id="eight"></p>
     <script>
         document.getElementById("one").innerHTML=Math.PI ;
         document.getElementById("two").innerHTML = Math.round(4.5) // (.5) above value will be consider as round like this ex = 5
@@ -27,6 +30,9 @@
         document.getElementById("four").innerHTML = Math.pow(7,2) ;
         document.getElementById("five").innerHTML = Math.sqrt(64)
         document.getElementById("six").innerHTML= Math.abs(-4.6);
+        document.getElementById("seven").innerHTML=Math.min(12,63,45,23,19,-200,-100);
+        console.log("math.max::",Math.max(12,63,45,23,19,-200,-100))
+        document.getElementById("eight").innerHTML=Math.random() ;//random method returns numbers between 0 to 9
     </script>
 </body>
 </html>
