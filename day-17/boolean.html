@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean in JavaScript</title>
+</head>
+<body>
+    <h1>The Boolean in JavaScript</h1>
+    <p id="demo"></p>
+    <p id="one"></p>
+    <script>
+ let x = 10 / "hello world"
+ document.getElementById("demo").innerHTML=Boolean(x); 
+document.getElementById("one").innerHTML= 10>6 ;
+    </script>
+    <p id="two"></p>
+    <script>
+        document.getElementById("two").innerHTML = "100 is " + Boolean(100)+ "<br/>" +
+        "200 is" + Boolean(100)+"<br/>" ; // value will be true 
+    </script>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <script>
+        let y 
+        let h = -8 ;
+        let b = -0 ;
+        document.getElementById("three").innerHTML=Boolean(y); // without value will be false 
+        document.getElementById("four").innerHTML= Boolean(h);
+        console.log(Boolean(h))
+        document.getElementById("five").innerHTML= Boolean(b);
+
+    </script>
+</body>
+</html>
