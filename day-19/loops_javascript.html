@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in javascript </title>
+</head>
+<body>
+    <h1>Print the Numbers</h1>
+    <p id="one"></p>
+    <script>
+        let text = ""
+        for (let i = 0; i<8 ;i ++){
+            text += "the number is "+i + "<br/>" ;
+        }
+        document.getElementById("one").innerHTML = text ;
+    </script>
+    <h1>Print the cars numbers</h1>
+    <p id="two"></p>
+    <script>
+        const cars= [ "maruti","suzuki","kia","creta","honda","scoda","BMW"];
+        let i = 2 ;
+        let car = cars.length ;
+        let texts ="";
+        for (; i<car;i++){
+          texts +="The car name is "+cars[i] +"<br/>"
+        }
+        document.getElementById("two").innerHTML = texts ;
+    </script>
+</body>
+</html>

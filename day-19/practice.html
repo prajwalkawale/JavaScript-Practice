@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time by using if else in javascript</title>
+</head>
+<body>
+    <h1>Display the time</h1>
+    <p id="one"></p>
+    <script>
+        const time = new Date ().getDay()
+        let greeting;
+        if(10<time){
+            greeting = "Good Morning"
+        }else{
+            greeting = "Good Aftrnoon"
+        }
+        document.getElementById("one").innerHTML= greeting ;
+    </script>
+    <h2>Loops in javascript</h2>
+    <p id="two"></p>
+    <script>
+        const cars= ["honda","kia","maruti","suzuki","BMW","AUDI"];
+        let text = "";
+        for(let i=0; i < cars.length; i ++){
+            text += cars[i]+"<br/>"
+        }
+        document.getElementById("two").innerHTML= text ;
+    </script>
+    <h3>Print the number by serial wise</h3>
+    <p id="four"></p>
+   <script>
+    let texts = ""
+    for (let j = 0; j < 6; j ++){
+      texts += "the number is "+j+"<br/>" ;
+    }
+    document.getElementById("four").innerHTML = texts ;
+   </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in javascript</title>
+</head>
+<body>
+    <h1>Loops in JavaScript</h1>
+    <p id="one"></p>
+    <script>
+        const cars = [ "maruti","suzuki","kia","creta","honda","scoda","BMW"];
+        
+        i = 0 ;
+        len = cars.length ;
+        text = "" ;
+        for (; i<len ;){
+            text += "the car name is "+ cars[i]+"<br/>";
+            i++ ;
+        }
+        document.getElementById("one").innerHTML = text ;
+    </script>
+    <h2>Print the car names by own method</h2>
+    <p id="two"></p>
+    <script>
+        const car = [ "maruti","suzuki","kia","creta","honda","scoda","BMW"];
+        let k = 0 ;
+        let broz = car.length;
+        let texxt = "";
+        for(;k<broz;){
+            texxt += "the car name is "+ car[k]+"<br/>";
+            k++
+        }
+        document.getElementById("two").innerHTML = texxt ;
+    </script>
+    <h3>another practice</h3>
+    <p id="three"></p>
+    <script>
+        let number = 5;
+        for (let i = 0;i<10;i++){
+            //stetement 
+        }
+        document.getElementById("three").innerHTML= i;
+    </script>
+</body>
+</html>
