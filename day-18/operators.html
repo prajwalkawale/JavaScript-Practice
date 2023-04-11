@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators in javascripts</title>
+    <link rel="stylesheet" href="./operators.css">
+</head>
+
+<body>
+    <h1>Election Voting </h1>
+    <h2>Give your vote bellow</h2>
+    <div id="three">
+        <input id="one" type="number" value="18">
+        <button onclick="myFunction()">Click Here</button>
+    </div>
+    <p>vote here</p>
+    <p id="two"></p>
+    <script>
+        function myFunction() {
+            let age = document.getElementById("one").value;
+            let voter = (age < 18) ? "You'ar too young" : "You'ar Enough"
+            document.getElementById("two").innerHTML = voter + " for Vote😊"
+        }
+    </script>
+
+</body>
+
+</html>
