@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators in Javascript</title>
+</head>
+
+<body>
+    <h1>Give you're vote bellow</h1>
+    <input id="one" value="18">
+    <button onclick="myFunction()">Click Here!</button>
+    <p id="demo"></p>
+    <script>
+     function myFunction() {
+        let voteable;
+        let age = Number(document.getElementById("one").value)
+       if (isNaN(age)){
+        voteable = "this is not a number"
+       }else{
+        voteable = (age>18)? "you're too young for vote" : "you're enough to vote";
+       }
+       document.getElementById("demo").innerHTML = voteable ;
+     }
+    </script>
+</body>
+
+</html>

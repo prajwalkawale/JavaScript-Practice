@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else in javascript</title>
+</head>
+
+<body>
+  <h1>Which Day Is Today ?</h1>
+   <p id="one"></p>
+   <script>
+    let Day ;
+    switch (new Date().getDay()) {
+        case 0 :Day = "Sunday"
+        break ;
+        case 1 : Day = "Monday"
+        break ;
+        case 2 : Day = "Tuesday"
+        break ;
+        case 3 :Day = "Wednesday"
+        break ;
+        case 4 : Day = "Thuesday"
+        break ;
+        case 5 : Day = "Frieday"
+        break ;
+        case 6 :Day = "Saturday"
+        break ;
+    }
+    document.getElementById("one").innerHTML = "Today is "+ Day ;
+   </script>
+   <p id="two"></p>
+   <script>
+    let text ;
+    switch(new Date().getDay()){
+        case 6 : text = "Today is Saturday"
+        break ;
+        case 0 : text = "Today is Sunday"
+        break ;
+        default : text ="Looking forward to the weakend"
+    }
+    document.getElementById("two").innerHTML = text ;
+   </script>
+</body>
+
+</html>
