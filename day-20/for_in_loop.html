@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_in_loops in javascript</title>
+</head>
+<body>
+    <h1>For in loops javascript</h1>
+    <p id="one"></p>
+    <script>
+        const person = [45,12,36,96,45,63];
+        Text = "";
+        for (x in person){
+            Text += person[x] + "<br/>" ;
+        }
+        document.getElementById("one").innerHTML = Text;
+    </script>
+    <h2>for each method in javascript</h2>
+    <p id="two"></p>
+    <script>
+        const numbers = [45,12,36,96,45,63];
+        txt = "";
+        numbers.forEach(myFunction);
+        function myFunction(value,index,array){
+            txt += value + "<br/>";
+        }
+        document.getElementById("two").innerHTML = txt ;
+    </script>
+</body>
+</html>
