@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square_pattern in javascript</title>
+</head>
+
+<body>
+    <h1>Square Pattern in Javascript</h1>
+    <p id="one"></p>
+    <script>
+        const numbers = 5 ;
+        let txt = "";
+        for (let l = 0 ; l<numbers; l ++){
+            for(let p = 0; p<numbers ; p++){
+                txt += "*";
+            }
+            txt += "*"+"<br/>"
+        }
+        document.getElementById("one").innerHTML = txt ;
+    </script>
+</body>
+</html>
