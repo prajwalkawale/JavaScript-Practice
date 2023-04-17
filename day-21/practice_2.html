@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>left_angle_star_pattern</title>
+</head>
+
+<body>
+    <h1>Left Angle Star Pattern In Javascript</h1>
+    <input type="number" id="one">
+    <button onclick="myFunction()">Click Here!</button>
+    <p id="two"></p>
+    <script>
+        function myFunction(){
+        const n = Number(document.getElementById("one").value);
+        let txt = "";
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < i-i; j++) {
+                txt += "&nbsp;&nbsp"
+            }
+            txt += "&nbsp;&nbsp"
+            for (let k = 0; k < i; k++) {
+                txt += "*"
+            }
+            txt += "<br/>"
+        }
+        document.getElementById("two").innerHTML = txt;
+        console.log(txt)
+    }
+    
+    </script>
+</body>
+
+</html>

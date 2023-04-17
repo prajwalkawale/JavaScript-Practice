@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>right_angle_javascript</title>
+</head>
+<body>
+    <h1>The Right Angle Pattern</h1>
+    <input type="number" id="one">
+    <button onclick="myFunction()">Click Here!</button>
+    <p id="two"></p>
+    <script>
+        function myFunction(){
+        const n = Number(document.getElementById("one").value)
+        text = "";
+        for(let i = 0 ; i< n ; i++){
+            for(let j = 0 ; j<n-i;j++){
+                text+= "&nbsp;&nbsp"
+            }
+            for(let k = 0 ; k<i; k++){
+                text += "*"
+            }
+            text+="<br/>" 
+            document.getElementById("two").innerHTML = text ;
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice of hallow pattern in javascript</title>
 </head>
+
 <body>
-    <h1>hallow practice in javascript</h1>
-    <p id="one"></p>
+    <h1>square pattern practice in javascript</h1>
+    <input id="one" type="number">
+    <button onclick="myFunction()">Click Here!</button>
+    <p id="two"></p>
     <script>
-        const n = 55;
-        let txt = ""
-        for(let i = 0;i<n ; i++){
-            for (let j = 0;j<n ; j++){
-                txt+="*"
+        function myFunction() {
+            const n = Number(document.getElementById("one").value);
+            txt = ""
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    txt += "*"
+                }
+                txt += "<br/>"
             }
-            txt += "<br/>"
+            document.getElementById("two").innerHTML = txt;
         }
-        document.getElementById("one").innerHTML = txt ; 
     </script>
 </body>
+
 </html>
