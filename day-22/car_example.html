@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While_loop in javascript</title>
+</head>
+<body>
+    <h1>Print Out The Cars name by using while method</h1>
+    <p id="one"></p>
+    <script>
+        let car = ["BMW","Maruti","Honda","Suzuki","Creta"];
+        let text = "";
+        let i = 0 ;
+        for(;car[i];){
+            text+="<br/>"+car[i];
+            i++
+        }
+        document.getElementById("one").innerHTML= text ;
+    </script>
+</body>
+</html>
