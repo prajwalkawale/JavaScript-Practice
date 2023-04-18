@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While_do_loop_in_javascript</title>
+</head>
+<body>
+    <h1>While loop in javascript</h1>
+    <p id="one"></p>
+    <script>
+        let text = ""
+        let i = 0 ;
+        while (i<10){
+            text+="<br/> the number is "+ i
+            i++
+        }
+        console.log(text)
+        document.getElementById("one").innerHTML = text ;
+    </script>
+    <!--Do and While method in bellow-->
+    <h2>Do And While Method</h2>
+    <p id="two"></p>
+    <script>
+        let txt = "";
+        let l = 0 ;
+        do{
+            txt += "<br/> the number is "+l 
+            l++
+        }
+        while(l<10);
+        console.log(txt)
+        document.getElementById("two").innerHTML= txt ;
+    </script>
+</body>
+</html>
