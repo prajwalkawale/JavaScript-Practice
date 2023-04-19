@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break methods in javascript</title>
+</head>
+<body>
+    <h1>break methods in javascript</h1>
+    <p id="one"></p>
+    <script>
+    let txt = ""
+    for(let i = 0 ; i<10 ; i++){if( i===5){break}
+        txt+="the number is "+i+"<br/>" ;
+    }
+    console.log(txt)
+    document.getElementById("one").innerHTML = txt ;
+    </script>
+    <h1>The continue method in javascript</h1>
+    <p id="two"></p>
+    <script>
+        let text=""
+        for (let l = 0 ; l<10 ; l++){
+            if(l===3 || l===5){continue}
+            text+="the number is "+l+"<br/>"
+        }
+        document.getElementById("two").innerHTML = text ;
+    </script>
+</body>
+</html>

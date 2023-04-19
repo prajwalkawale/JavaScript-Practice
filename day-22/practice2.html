@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while_loop_in_javascript</title>
+</head>
+<body>
+    <h1>while loops in Javascript</h1>
+    <p id="one"></p>
+    <script>
+        const car=["Maruti","suzuki","BMW","TATA","CRETA"]
+        let i = 0;
+        let text = ""
+        while(car[i])
+        {
+            text+="<br/> the car name is "+ car[i]
+            i++
+        }
+        document.getElementById("one").innerHTML= text;
+
+        
+    </script>
+</body>
+</html>

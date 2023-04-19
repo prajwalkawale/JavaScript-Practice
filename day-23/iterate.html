@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itarate in javascript</title>
+</head>
+<body>
+    <h1>Itarate in javascript</h1>
+    <p id="one"></p>
+    <script>
+        const name = "paragraph"
+        let text = "";
+        for(let x of name){
+            text+= x +"<br/>"
+        }
+        document.getElementById("one").innerHTML = text ;
+    </script>
+</body>
+</html>

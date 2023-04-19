@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break_practice_2_javascript</title>
+</head>
+
+<body>
+    <h1>Break Practice In JavaScript</h1>
+    <p id="one"></p>
+    <script>
+        const car = ["Maruti", "suzuki", "BMW", "TATA", "CRETA"]
+        let text = ""
+        list: {
+            text += car[0] + "<br/>"
+            text += car[1] + "<br/>"
+            text += car[2] + "<br/>"
+            break list;
+            text += car[3] + "<br/>"
+            text += car[4] + "<br/>"
+
+        }
+        document.getElementById("one").innerHTML = text;
+    </script>
+</body>
+
+</html>
