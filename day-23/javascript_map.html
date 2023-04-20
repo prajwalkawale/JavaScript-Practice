@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map() Methods</title>
+</head>
+<body>
+    <h1>Map() Methods In JavaScript</h1>
+    <p id="one"></p>
+    <script>
+        const fruits= new Map([
+            ["apple","500"],
+            ["Kiwi", "300"],
+            ["Bananna","200"],
+            ["mango","250"]
+        ])
+        let text = ""
+        document.getElementById("one").innerHTML=fruits.get("apple")
+    </script>
+    <h2>Set() Methods In JavaScript</h2> 
+    <p id="two"></p>
+    <script>
+        const fruit = new Map()
+
+        fruit.set("apple","500");   // small letter "s" 
+        fruit.set("Kiwi", "300");
+        fruit.set("Bananna","200");
+        fruit.set("mango","250");
+        document.getElementById("two").innerHTML = fruit.get("apple");
+    </script>
+    <h3>set() methods can change existing map values</h3>
+    <p id="five"></p>
+    <script>
+        const f = new Map([
+        ["mango","250"],
+        ["apple","500"],
+        ["Bananna","200"],
+        ["Kiwi", "300"]
+        ])
+        f.set("mango","290")
+        console.log(f.has("apple"))
+        document.getElementById("five").innerHTML = f.get("mango") ;
+    </script>
+</body>
+</html>
