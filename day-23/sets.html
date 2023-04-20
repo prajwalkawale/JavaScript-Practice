@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets_in_javascript</title>
+</head>
+<body>
+    <h1>The Sets In Javascript</h1>
+    <p id="one"></p>
+    <script>
+       const text = new Set(["a","b","c","d"]);
+      // let letter = ""
+     //  for(const x of text){
+       // letter+= x +"<br/>"
+       //}
+       console.log(text.size)
+        document.getElementById("one").innerHTML=text.size ;
+    </script>
+    <h1>add letters in sets</h1>
+    <p id="two"></p>
+    <script>
+        const car = new Set();
+
+        const first = "BMW"
+        const second = "TATA"
+        const third="Maruti"
+
+        car.add(first);
+        car.add(second);
+        car.add(third);
+       document.getElementById("two").innerHTML = car.size ;
+    </script>
+    <h2>for Each method in Javascript</h2>
+    <p id="three"></p>
+    <script>
+        const cars = new Set(["Maruti","Suzuki","Honda","Creta"])
+        let serial = ""
+        cars.forEach(function(value){
+            serial+=value + "<br/>"
+        })
+        document.getElementById("three").innerHTML = serial ;
+    </script>
+    <h2>The Value() Methods In JavaScript</h2>
+    <p id="four"></p>
+    <script>
+        const Letters= new Set(["a","b","c","d"])
+        document.getElementById("four").innerHTML= Letters.values() ;
+    </script>
+</body>
+</html>
