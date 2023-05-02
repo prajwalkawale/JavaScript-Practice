@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of javascript</title>
+</head>
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <script>
+        let text = "";
+        for(let i = 0; i<10 ; i++){
+            if(i == 5){break}
+            text += i + "this number has printed"+"<br/>"
+        }
+        document.getElementById("one").innerHTML =text ;
+
+        let p= ""
+        for(i=0 ; i<20; i++){
+            if(i==18){break}
+            p += i +" this is the number "+"<br/>"
+        }
+        document.getElementById("two").innerHTML = p ;
+
+        let txt = ""
+        for (let i = 0 ; i<20 ; i++){
+            if(i==5||i==9){continue}
+            txt+="the number is "+i+"<br/>"
+        }
+        document.getElementById("three").innerHTML = txt ;
+
+    </script>
+</body>
+</html>
