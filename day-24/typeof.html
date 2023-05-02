@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeof_javascript</title>
+</head>
+
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <br>
+    <br>
+    <p id="demo"></p>
+    <p id="three"></p>
+    <hr>
+    <br>
+    <br>
+    <p id="four"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><a href="this is useless link">this link is useless</a></p>
+    <p><a href="javascript:void(document.body.style.backgroundColor='red');">click me for change background into red</a></p>
+    <script>
+        document.getElementById("one").innerHTML = "john is the data type of " + typeof "john" + "<br/>" +
+            '["a"+"b"]' + typeof ["a" + "b"] + "<br/>" + "the null is " + typeof null;
+
+        let person = { name: "clay", age: "30", lastName: "jenson" }
+        person = null // we can make it empty by adding null into it 
+        let booleans = undefined == null // same in value but different in datatype
+        let bollean = undefined === null
+        let ans = booleans + " || " + bollean;
+        document.getElementById("demo").innerHTML = typeof person 
+        document.getElementById("three").innerHTML = ans;
+        let car = [ "maruti", "suzuki","bmw" , " creta"]
+        document.getElementById("four").innerHTML =(car instanceof Array)+"<br/>"+
+        (car instanceof Object )
+
+    </script>
+</body>
+
+</html>

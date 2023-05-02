@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regexprassion_in_javascript</title>
+</head>
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <p>find out the the MICROSOFT WORD by using search method</p>
+    <script>
+        let text = " the microsoft wrord have to find out"
+        let find = text.search(/microsoft/i);
+        document.getElementById("one").innerHTML = find ;
+    </script>
+</body>
+</html>
