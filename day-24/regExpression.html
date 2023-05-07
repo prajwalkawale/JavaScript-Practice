@@ -15,5 +15,30 @@
         let find = text.search(/microsoft/i);
         document.getElementById("one").innerHTML = find ;
     </script>
+    <p>the ALPHABET word has to get out</p>
+    <p id="two"></p>
+    <script>
+        let letters = "the word ALPHABET has to get out"
+        let get =letters.search(/alphabet/i)
+        document.getElementById("two").innerHTML = get +" the position of letter alphabet is"
+    </script>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p id="four">nick is a programmer</p>
+    <p id="five"></p>
+    <p id="six"></p>
+    <button onclick="myFunction()">click here!</button>
+    <script>
+        function myFunction(){
+            let person = "nick is a programmer"
+            let find =/k/;
+            let change = person.replace(/programmer/,"Codder")
+            document.getElementById("four").innerHTML= change;
+            document.getElementById("five").innerHTML= person.match(/[g,r,a,m,m,e,r]/g);
+            document.getElementById("six").innerHTML= find.test(person);
+        }
+    </script>
 </body>
 </html>

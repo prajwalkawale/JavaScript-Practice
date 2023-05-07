@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error_catch_in_javascript</title>
+</head>
+
+<body>
+    <!--<h1>Error and catch in Javascript</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        try {
+            adddrt("hello world")
+        } catch (err) {
+            console.log(err.message)
+            document.getElementById("one").innerHTML = err.message;
+        }
+
+        try {
+            alert("hellow javascript")
+        } catch (err) {
+            document.getElementById("two").innerHTML = err.message; // the catch will not exicute
+        }
+    </script>
+    <hr>
+    <br>
+    <br>-->
+    <input id="demo" type="text">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+        function myFunction() {
+            const message = document.getElementById("p01");
+            message.innerHTML = "";
+            let x = document.getElementById("demo").value;
+            try {
+                if (x.trim() == "") throw "empty";
+                if (isNaN(x)) throw "not a number";
+                x = Number(x);
+                if (x < 5) throw "too low";
+                if (x > 10) throw "too high";
+            }
+            catch (err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
