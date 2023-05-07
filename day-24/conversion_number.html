@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion_into_number_javascript</title>
+</head>
+
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <br>
+    <br>
+    <hr>
+    <p id="two"></p>
+    <script>
+        document.getElementById("one").innerHTML = Number("114") + "<br/>" + Number("hello") + "<br/>" + Number(Math.PI) + "<br/>" +
+            Number(" ") + "<br/>" + Number("98 45");
+        let x = "hellow microsoft"
+        let y = 78;
+        let z = NaN;
+        document.getElementById("two").innerHTML = typeof x + "<br/>" + typeof y + "<br/>" + typeof z;
+    </script>
+</body>
+
+</html>
