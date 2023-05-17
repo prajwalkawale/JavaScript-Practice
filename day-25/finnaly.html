@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finnaly statment in try and catch</title>
+</head>
+<body>
+    <h1>this is headline</h1>
+    <input id="one" type="number">
+    <button onclick="myFunction()">Try it</button>
+    <p id="three"></p>
+    <script>
+        function myFunction(){
+            const message =document.getElementById("three");
+            message.innerHTML = " ";
+            let x = document.getElementById("one").value ;
+            try{
+                if(x.trim() ==" ") throw "input is empty";
+                if (isNaN(x)) throw "its not a number";
+                x = Number(x);
+                if(x<5) throw "too small number"
+                if(x>10) throw "too high number"
+            }
+            catch(err){
+                message.innerHTML = "input" + err
+            }
+            
+        }
+    </script>
+</body>
+</html>

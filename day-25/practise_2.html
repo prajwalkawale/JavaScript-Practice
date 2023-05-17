@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_2_javascript</title>
+</head>
+<body>
+    <h1>this is headling</h1>
+    <input id="one" type="number">
+    <button onclick="myFunction()">try it !</button>
+    <p id="three"></p>
+    <script>
+        function myFunction(){
+            const message = document.getElementById("three");
+            message.innerHTML = " ";
+            let x = document.getElementById("one").value ;
+            try{
+                if(x.trim()=="") throw "empty"
+                if( isNaN(x)) throw "Its not a number"
+                x = Number(x)
+                if(x<5) throw "number is too small"
+                if(x>10) throw "number is too high"
+                
+            }catch(err){
+                message.innerHTML = "this is number " + err ;
+            }
+        }
+    </script>
+</body>
+</html>
