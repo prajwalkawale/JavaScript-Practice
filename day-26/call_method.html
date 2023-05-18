@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call_methods in javascript</title>
+</head>
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        const purson = {
+            fullName : function(){
+                return this.firstName + " "+ this.lastName ;
+            }
+        }
+        let person2 = {
+            firstName : " clay ",
+            lastName : "jenson",
+            age : 38 
+        }
+        let person3 = purson.fullName.call(person2);
+        document.getElementById("one").innerHTML = person3 ;
+
+        const car ={
+            carNames: function () {
+                return this.carFirst + " "+ this.carSecond ;
+            }
+        }
+        totallCar = {
+            carFirst : "Maruti",
+            carSecond : "Honda",
+            carThird : "Creta",
+        }
+        let carPurchase =car.carNames.call(totallCar);
+        document.getElementById("two").innerHTML =carPurchase ;
+    </script>
+</body>
+</html>
