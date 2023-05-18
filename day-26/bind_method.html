@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bind_methods in javascript</title>
+</head>
+
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <script>
+        let person  = {
+            firstName : "clay",
+            lastName : "jenson",
+            fullName : function(){
+                return this.firstName + " "+this.lastName ;
+            }
+        }
+        let members = {
+            firstName : "max",
+            lastName : "tony",
+        }
+        let newPerson = person.fullName.bind(members);
+        console.log(newPerson())
+        document.getElementById("one").innerHTML = newPerson() ;
+    </script>
+</body>
+
+</html>

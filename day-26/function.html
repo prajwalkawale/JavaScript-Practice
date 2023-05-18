@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function_methods_in_javscript</title>
+</head>
+<body>
+    <h1>this is headline</h1>
+    <button id="btn"></button>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <script>
+        let hellow =" ";
+        hellow =function(){
+            document.getElementById("one").innerHTML += this;
+        }
+        document.getElementById("btn").innerHTML = "hellow "+ hellow ;
+    </script>
+</body>
+</html>
