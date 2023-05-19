@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes_in_javascript</title>
+</head>
+
+<body>
+    <h1>this is headline</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        class car {
+            constructor(name , year){
+                this.name = name ;
+                this.year = year;
+            }
+            age(){
+               const age = new Date
+               return age.getFullYear() - this.year
+            }
+        }
+        const carName1 = new car ("AUDI", 2014);
+        const carName2 = new car ("BMW", 2013);
+        document.getElementById("one").innerHTML = carName1.name + "<br/> "+ carName1.age()+"<br/>"
+        carName2.name + "<br/>"+carName2.age();
+
+        class person {
+            constructor(name , age){
+                this.name = name 
+                this.age = age 
+            }
+
+            birth(){
+                const year = new Date();
+                return year.getFullYear() - this.age
+            }
+        }
+        const person1 =new person("Rohan" ,2001);
+        const person2 = new person ("Rahul" , 2000);
+        document.getElementById("two").innerHTML = "the person is "+person1.birth()+ " year old"
+    </script>
+</body>
+
+</html>
