@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
+    <title>plotly</title>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    <div id="myDiv"></div>
     <script>
         var trace1 = {
             type: 'bar',
-            x: [1, 2, 3, 4],
-            y: [5, 10, 2, 8],
+            x: ["pinapple", "kukumbar", "potato","mango"],
+            y: [10 , 25, 36, 45],
             marker: {
                 color: '#C8A2C8',
                 line: {
@@ -26,8 +26,8 @@
         var data = [trace1];
 
         var layout = {
-            title: 'Responsive to window\'l size!',
-            font: { size: 15 }
+            title: 'Responsive to window\'s size!',
+            font: { size: 18 }
         };
 
         var config = { responsive: true }

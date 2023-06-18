@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scheduling in javascript</title>
+</head>
+<body>
+    <h1>this is a head</h1>
+    <button onclick="myTimeout()">this number appear after 5 sec</button>
+    <button onclick="myTimeinterval()">this is a clock</button>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        function myTimeout(){
+            setTimeout(()=>{
+                console.log("this number appeard after 5 sec"),
+                document.getElementById("one").innerHTML="this number appeard within 5 sec";
+            },5000)
+        }
+        function myTimeinterval(){
+            let counter = 0
+            let timeOut =  setInterval(()=>{
+                document.getElementById("two").innerHTML= counter++;
+            },1000)
+            setTimeout(()=>{
+                clearInterval(timeOut);
+            },10000)
+        }
+    </script>
+</body>
+</html>
