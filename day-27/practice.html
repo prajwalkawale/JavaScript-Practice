@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_classes in javascript</title>
+</head>
+<body>
+    <h1>classes in javascript</h1>
+    <p id="one"></p>
+    <script>
+        class car {
+            constructor(name ,year){
+                this.name = name ;
+                this.year = year
+            }
+            age(){
+                const date = new Date
+                return date.getFullYear() - this.year; 
+            }
+        }
+        const mycar = new car("HONDA",2014);
+        const mycar2 = new car ("CRETA",2013);
+        document.getElementById("one").innerHTML ="my car is " + mycar.age()+ " years old "+ mycar.name ;
+    </script>
+</body>
+</html>
